@@ -1,10 +1,10 @@
 <form method="POST" action="/criteria-search">
-  <div id="criteria-selector" class="select7_container">
-    <div class="select7_arrow">&#9662;</div>
-    <div class="select7_placeholder">Sélection code APE</div>
-    <select class="select7_select" onchange="add_selected_item(this, event);">
-        <option class="select7_hide" value="filler"></option>
-        <option value="0111Z">01.11Z	Culture de céréales (à l'exception du riz), de légumineuses et de graines oléagineuses</option>
+<label>Code APE</label>
+{{!-- <button class="btn-save btn btn-primary btn-sm">Save</button> --}}
+<select class="mdb-select md-form colorful-select dropdown-primary" multiple searchable="Search here.." name="codeApe">
+    <option value="" disabled selected>Sélectionner les codes APE</option>
+    
+     <option value="0111Z">01.11Z	Culture de céréales (à l'exception du riz), de légumineuses et de graines oléagineuses</option>
         <option value="0112Z">01.12Z	Culture du riz</option>
         <option value="0113Z">01.13Z	Culture de légumes, de melons, de racines et de tubercules</option>
         <option value="0114Z">01.14Z	Culture de la canne à sucre</option>
@@ -535,15 +535,14 @@
         <option value="9810Z">98.10Z	Activités indifférenciées des ménages en tant que producteurs de biens pour usage propre</option>
         <option value="9820Z">98.20Z	Activités indifférenciées des ménages en tant que producteurs de services pour usage propre</option>
         <option value="9900Z">99.00Z	Activités des organisations et organismes extraterritoriaux</option>
-        
-    </select>
-    <div class="select7_items"></div>
-</div>
+</select>
 
 <button type="submit">Submit</button>
 </form>
 
 
-<script>
-  
-</script>
+
+
+       
+        
+ 
